@@ -12,7 +12,7 @@ namespace GitExercise
             while (true)
             {
                 bool inAuthorized = CheckCredentials();
-                if (inAuthorized)
+                if (!inAuthorized)
                 {
                     Console.WriteLine("Access denied.");
                     Console.ReadKey(true);
