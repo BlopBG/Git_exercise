@@ -9,15 +9,16 @@ namespace GitExercise
         private const string Password = "abcd1234";
         public static void Main()
         {
-            while (true)
+            bool inAuthorized = CheckCredentials();
+            if (!inAuthorized)
             {
-                bool inAuthorized = CheckCredentials();
-                if (!inAuthorized)
-                {
-                    Console.WriteLine("Access denied.");
-                    Console.ReadKey(true);
-                    return;
-                }
+                Console.WriteLine("Access denied.");
+                Console.ReadKey(true);
+                return;
+            }
+
+            while (true)
+            {   
                 Console.WriteLine("Console Calculator App");
                 Console.WriteLine(new string('-', 15));
 
