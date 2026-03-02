@@ -56,6 +56,15 @@ namespace GitExercise
                     case "dr":
                         OptionsManager.DivideRemainder(a, b);
                         break;
+                    case "pow":
+                        OptionsManager.Pow(a, b);
+                        break;
+                    case "log":
+                        OptionsManager.Log(a, b);
+                        break;
+                    case "fact":
+                        OptionsManager.Factorial(a, b);
+                        break;
                     case "ex":
                         Console.Clear();
                         Console.WriteLine("Goodbye");
