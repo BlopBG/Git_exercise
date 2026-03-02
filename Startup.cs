@@ -35,6 +35,15 @@ namespace GitExercise
                 case "m":
                     OptionsManager.Multiply(a, b);
                     break;
+                case "pow":
+                    OptionsManager.Pow(a, b);
+                    break;
+                case "log":
+                    OptionsManager.Log(a, b);
+                    break;
+                case "fact":
+                    OptionsManager.Factorial(a, b);
+                    break;
             }
 
             Console.WriteLine("Pres any key to close the app...");
